@@ -72,6 +72,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             display: none;
         }
+        #about {
+            margin-top: 30px;
+            border-radius: 32px;
+            box-shadow: 0px 0px 45px 0px #7575751A;
+        }
+        #about .row {
+            padding: 30px 0 30px 0;
+        }
+        p {
+            font-weight: normal;
+        }
+        footer {
+            min-height: 100px;
+        }
+        @media screen and (max-width: 991px) {
+            #about-logo {
+                position: absolute;
+                max-height: 31px;
+                right: 15px;
+                top: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -80,6 +102,54 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input type="text" id="phone" name="phone" placeholder="+375(29)123-45-67" required>
     <button class="btn btn-primary" type="submit">Определить страну</button>
 </form>
+<main>
+    <div id="about" class="container">
+        <div class="row align-items-center">
+            <div class="col-12 order-2 col-lg-8 offset-lg-1 order-lg-1">
+                <h1>Dlaczego my</h1>
+                <div class="row">
+                    <div class="col-6">
+                        <h2>Koszty</h2>
+                        <p>Zamieniasz koszty stałe
+                            logistyki na koszty zmienne.</p>
+                    </div>
+                    <div class="col-6">
+                        <h2>Black Friday?</h2>
+                        <p>Czekasz na niego z
+                            niecierpliwością, a nie z obawą.</p>
+                    </div>
+                    <div class="col-6">
+                        <h2>Oszczędność czasu</h2>
+                        <p>Zajmujesz się tym, co lubisz -
+                            eCommercem, a nie logistyką.
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <h2>Spokój ducha</h2>
+                        <p>Nie przejmujesz się kurierami,
+                            nie zajmujesz się wysyłką zamówień.</p>
+                    </div>
+                    <div class="col-6">
+                        <h2>Opakowania</h2>
+                        <p>Wyzwania pakowania znamy od
+                            podszewki - ściśle współpracujemy
+                            z producentem opakowań.</p>
+                    </div>
+                    <div class="col-6">
+                        <h2>Co dajemy dodatkowo?</h2>
+                        <p>Wraz z naszą usługą otrzymujesz
+                            bezpłatny konsulting w zakresie
+                            eCommerce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 col-lg-3 order-lg-2">
+                <img id="about-logo" class="img-fluid" src="https://i.ibb.co/VtL8RyY/logo.png" alt="logo">
+            </div>
+        </div>
+    </div>
+</main>
+<footer></footer>
 <div class="cookie-popup" id="cookiePopup">
     На этой странице используются куки. Нажмите "Принять", чтобы закрыть это уведомление.
     <button class="btn btn-primary" onclick="acceptCookies()">Принять</button>
